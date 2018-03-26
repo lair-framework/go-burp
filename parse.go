@@ -23,6 +23,7 @@ type Issue struct {
 	IssueBackground       string            `xml:"issueBackground"`
 	RemediationBackground string            `xml:"remediationBackground"`
 	IssueDetail           string            `xml:"issueDetail"`
+	IssueDetailItems      []string          `xml:"issueDetailItems>issueDetailItem"`
 	RequestResponses      []RequestResponse `xml:"requestresponse"`
 }
 
